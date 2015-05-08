@@ -1,0 +1,13 @@
+x <- rnorm(100)
+hist(x)
+par(mar = c(2,2,2,2))
+hist(x)
+x <- rnorm(100)
+hist(x)
+x <- rnorm(100)
+hist(x)
+x <- rnorm(100)
+hist(x)
+x <- rnorm(100)
+hist(x)
+

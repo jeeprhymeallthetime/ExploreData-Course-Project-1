@@ -11,8 +11,6 @@ u <- rt$Date == "2007-02-01" | rt$Date == "2007-02-02"
 #summary(u)
 #summary(rt[u,])
 subset <- rt[u, ]
-#summary(subset)
-png(file="plot1.png",width=480, height=480)
-hist(subset$Global_active_power, col="red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)", ylab = "Frequency")
-#dev.copy(png,filename="plot1.png");
+png(file="plot2.png",width=480, height=480)
+plot(subset$Time, subset$Global_active_power, type="l", ylab = "Global Active Power (kilowatts)", xlab="")
 dev.off ();
